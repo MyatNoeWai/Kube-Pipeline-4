@@ -1,0 +1,10 @@
+kind: pipeline
+type: kubernetes
+name: testing-kube-pipeline
+
+steps:
+- name: greeting
+  image: alpine
+  commands:
+  - echo hello
+  - echo world
